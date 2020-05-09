@@ -8,5 +8,5 @@ map.on("load", () => {
 	addPopupEvents(map, farms.layer.id);
 
 	map.addSource("kitsap", kitsap.feature);
-	map.addLayer(kitsap.layer);
+	map.addLayer(kitsap.layer, farms.layer.id);
 });
