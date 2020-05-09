@@ -15,3 +15,7 @@ Note that `coordinates` is reversed from the normal way in MapBox's API and goes
 Use `yarn start` to run the app in development mode then open your browser to http://localhost:1234. The page will automattically reload when you make changes.
 
 Use `yarn build` to create a production version in the `dist/` folder.
+
+## Demoing
+
+The site is automattically deployed to https://kitsapfoodcoop-farm-map.netlify.app/ using Netlify. To deploy a new version simply merge to master.
