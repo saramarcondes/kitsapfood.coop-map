@@ -24,7 +24,7 @@ const featureHtml = ({ href, title, description }) =>
  * @param {?string} attrs.properties.icon
  * @param {number[]} attrs.coordinates
  */
-const Feature = ({ properties, coordinates }) => {
+const Farm = ({ properties, coordinates }) => {
 	const feature = {
 		type: "Feature",
 		properties: {
@@ -38,11 +38,11 @@ const Feature = ({ properties, coordinates }) => {
 		},
 	};
 
-	Feature.features.push(feature);
+	Farm.features.push(feature);
 
 	return feature;
 };
 
-Feature.features = [];
+Farm.features = [];
 
-export default Feature;
+export default Farm;

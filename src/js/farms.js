@@ -1,6 +1,6 @@
-import Feature from "./Feature";
+import Farm from "./Farm";
 
-Feature({
+Farm({
 	properties: {
 		title: "Roots Farm",
 		description:
@@ -10,7 +10,7 @@ Feature({
 	coordinates: [-122.63939, 47.8193696],
 });
 
-Feature({
+Farm({
 	properties: {
 		title: "The Sheepish Pig",
 		description:
@@ -20,7 +20,7 @@ Feature({
 	coordinates: [-122.504478, 47.8018292],
 });
 
-Feature({
+Farm({
 	properties: {
 		title: "Kitsap Farms - Aquaponics",
 		description:
@@ -30,7 +30,7 @@ Feature({
 	coordinates: [-122.557738, 47.9164916],
 });
 
-Feature({
+Farm({
 	properties: {
 		title: "Full Tilth Farm",
 		description:
@@ -40,7 +40,7 @@ Feature({
 	coordinates: [-122.5765409, 47.7563124],
 });
 
-Feature({
+Farm({
 	properties: {
 		title: "Pheasant Fields Farms",
 		description:
@@ -64,6 +64,6 @@ export const farms = {
 	type: "geojson",
 	data: {
 		type: "FeatureCollection",
-		features: Feature.features,
+		features: Farm.features,
 	},
 };
