@@ -1,11 +1,8 @@
-/**
- * This file is just a silly example to show everything working in the browser.
- * When you're ready to start on your site, clear the file. Happy hacking!
- **/
+import map, { addPopupEvents } from "./map";
+import * as farms from "./farms";
 
-import confetti from "canvas-confetti";
-
-confetti.create(document.getElementById("canvas"), {
-  resize: true,
-  useWorker: true,
-})({ particleCount: 200, spread: 200 });
+map.on("load", () => {
+	map.addSource("farms", farms.farms);
+	map.addLayer(farms.layer);
+	addPopupEvents(map, farms.layer.id);
+});

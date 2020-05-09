@@ -1,25 +1,19 @@
-# New Project
+# Kitsap Food Coop - Farms Map
 
-> ✨ Bootstrapped with Create Snowpack App (CSA).
+[Kitsap Food Coop's](https://kitsapfood.coop/) partner farm map. The built version of this is embedded into the coop's website.
 
-## Available Scripts
+# Development
 
-### npm start
+## Modifying farms (adding/updating)
 
-Runs the app in the development mode.
-Open http://localhost:3000 to view it in the browser.
+To add or modify a farm, simply add a new `Feature` in [`src/farms.js`](src/farms.js) or update the existing one.
 
-The page will reload if you make edits.
-You will also see any lint errors in the console.
+Note that `coordinates` is reversed from the normal way in MapBox's API and goes Long/Lat rather than Lat/Long. The easiest way to get the coordinates is to copy them from the Google Maps URL for the location. The coordinates are located after the `@` symbol in the URL when you've selected a location.
 
-### npm run build
+## Environment
 
-Builds the app for production to the `dist/` folder.
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The development environment is powered through [Snowpack](https://www.snowpack.dev/). The build is also managed by Snowpack.
 
-The build is minified and the filenames include the hashes.
-Your app is ready to be deployed!
+Use `yarn start` to run the app in development mode. It will automatically open your browser to http://localhost:8080. The page will automattically reload when you make changes.
 
-### Q: What about Eject?
-
-No eject needed! Snowpack guarantees zero lock-in, and CSA strives for the same.
+Use `yarn build` to create a production version in the `dist/` folder.

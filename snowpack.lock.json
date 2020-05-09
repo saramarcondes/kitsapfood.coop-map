@@ -1,5 +1,5 @@
 {
   "imports": {
-    "canvas-confetti": "https://cdn.pika.dev/pin/canvas-confetti@v1.2.0-kzcveexqNXJywloAjiQb/canvas-confetti.js"
+    "mapbox-gl": "https://cdn.pika.dev/pin/mapbox-gl@v1.10.0-6VDe5T8SPvKESZ5ewOng/mapbox-gl.js"
   }
 }
