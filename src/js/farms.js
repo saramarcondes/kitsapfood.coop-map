@@ -64,6 +64,6 @@ export const farms = {
 	type: "geojson",
 	data: {
 		type: "FeatureCollection",
-		features,
+		features: Feature.features,
 	},
 };

@@ -1,5 +1,0 @@
-{
-  "imports": {
-    "mapbox-gl": "https://cdn.pika.dev/pin/mapbox-gl@v1.10.0-6VDe5T8SPvKESZ5ewOng/mapbox-gl.js"
-  }
-}
